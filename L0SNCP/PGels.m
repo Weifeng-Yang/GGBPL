@@ -68,7 +68,7 @@ if(lossH(i+1)>lossH(i)-C/2*sumnorm)
     var=varK;
     for j=1:num
     [V,L(j)]=grad(var,ngmar,j,num,r);
-    [var{j},~]=PROX(varze{j},V,aa(j));
+    var{j}=PROX(varze{j},V,aa(j));
     end
     [loss(i+1),reloss(i+1)]=compute(var,ngmar);
     lossH(i+1)=loss(i+1);
