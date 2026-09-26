@@ -166,7 +166,7 @@ for s=1:length(trinum)
 %     semilogy(x1,lossdata{i},color(k),'linewidth',0.9,'MarkerIndices',maker_idx);
 %     xlim([min(timeend*0.9),max(timeend)]);
     xlabel('Time(s)','FontSize',30);
-    ylabel('Objective funciton value','FontSize',30);
+    ylabel('Objective function value','FontSize',30);
     if(trigger(s)==0)
     mes='PALM';
     elseif(trigger(s)==1)
@@ -203,7 +203,7 @@ h=legend(mess,'Interpreter','latex');
 set(gca,'FontSize',45);
 set(h,'FontSize',28)
 xlabel('Time (seconds)','FontSize',45);
-ylabel('Objective funciton value','FontSize',45);
+ylabel('Objective function value','FontSize',45);
 
 
 set (gca,'position',[0.108,0.178,0.445,0.7390]);
@@ -232,7 +232,7 @@ for s=1:length(ind)
 %     semilogy(x1,lossdata{i},color(k),'linewidth',0.9,'MarkerIndices',maker_idx);
 %     xlim([min(timeend*0.9),max(timeend)]);
 %     xlabel('Time (seconds)','FontSize',30);
-%     ylabel('Objective funciton value','FontSize',30);
+%     ylabel('Objective function value','FontSize',30);
     if(trigger(k)==0)
     mes='PALM';
     elseif(trigger(k)==1)
